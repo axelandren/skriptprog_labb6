@@ -10,7 +10,7 @@ face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
 # select image to recognize
-img = cv.imread(r'test_imgs/bryan cranston (18).jpg')
+img = cv.imread(r'test_imgs/messi (18).jpg')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # Detect the face in the image

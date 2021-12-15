@@ -31,11 +31,8 @@ def create_training():
                 faces_roi = gray[y:y+h, x:x+w]
                 features.append(faces_roi)
                 labels.append(label)
-                # if len(features) % 5 == 0:
-                cv.imshow('Image', faces_roi)
-                cv.waitKey(0)
 
-create_training()C
+create_training()
 
 # convert to numpy arrays for use in face recognizer
 features = np.array(features, dtype='object')
